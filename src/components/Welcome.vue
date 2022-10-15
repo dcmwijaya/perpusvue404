@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h3>Selamat datang di website perpusvue404</h3>
+    <h1>Selamat datang di website perpusvue404</h1>
     <p>
       Website ini dibuat untuk memenuhi kebutuhan masyarakat di era pandemi dalam ranah pembacaan dan peminjaman buku secara
       online
@@ -10,9 +10,6 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'MainApp'
 }
 </script>
