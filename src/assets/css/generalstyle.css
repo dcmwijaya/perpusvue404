@@ -1,0 +1,19 @@
+/* Navbar */
+.navbar-bg{
+    background: linear-gradient(-180deg, rgb(206, 187, 244), rgb(246, 231, 181));
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-weight: bold;
+}
+
+.navbar-link:hover{
+    border: rgb(132, 72, 0) 1px;
+    border-style:double;
+    border-radius: 15px;
+}
+
+/* Body */
+body{
+    font-family: monospace;
+}
