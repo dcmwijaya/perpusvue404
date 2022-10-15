@@ -1,15 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from './components/Home.vue';
-import Katalog from './components/Katalog.vue';
+import Home from './components/pages/Home.vue';
+import Katalog from './components/pages/Katalog.vue';
 
 const routes = [
     {
         path: "/",
-        components: Home,
+        component: Home,
     },
     {
         path: "/Katalog",
-        components: Katalog,
+        component: Katalog,
     }
 ];
 
