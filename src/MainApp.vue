@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Welcome msg=""/>
+  <Navbar />
+  <Content />
+  <Footer />
 </template>
 
 <script>
-import Welcome from './components/Welcome.vue'
+import Navbar from './components/Navbar.vue'
+import Content from './components/Content.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'MainApp',
   components: {
-    Welcome
+    Navbar, Content, Footer
   }
 }
 </script>
