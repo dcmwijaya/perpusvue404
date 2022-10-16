@@ -17,6 +17,13 @@
 body{
     font-family: monospace;
 }
+main{
+    padding: 50px 100px 10px 100px; /* Padding: Top, Right, Bottom, Left */
+}
+.btn-action{
+    margin: 0px 10px 0px 10px;
+    font-weight: bold;
+}
 
 /* Beranda */
 .Logo{
@@ -31,6 +38,5 @@ body{
 
 /* Footer */
 .footer-bg{
-    margin-top: 50px;
     background: linear-gradient(-180deg, rgb(206, 187, 244), rgb(246, 231, 181));
 }

@@ -11,8 +11,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <router-link to="/" class="nav-link active me-3 navbar-link" aria-current="page"><i class="bi bi-house-fill me-1"></i>Home</router-link>
-          <router-link to="/Katalog" class="nav-link active navbar-link" aria-current="page"><i class="bi bi-journal-bookmark-fill me-1"></i>Katalog</router-link>
+          <router-link to="/" class="nav-link active me-3 navbar-link" aria-current="page"><i class="bi bi-house-fill me-1"></i>Beranda</router-link>
+          <router-link to="/Katalog" class="nav-link active me-3 navbar-link" aria-current="page"><i class="bi bi-journal-bookmark-fill me-1"></i>Katalog</router-link>
+          <router-link to="/ManajemenBuku" class="nav-link active navbar-link" aria-current="page"><i class="bi bi-book-half me-1"></i>Manajemen Buku</router-link>
         </ul>
       </div>
     </div>
