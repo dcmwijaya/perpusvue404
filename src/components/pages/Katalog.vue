@@ -3,12 +3,18 @@
         <div class="katalog" style="text-align: center">
             <h1>Menu Katalog</h1>
             <hr><br>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="Search" placeholder="Cari data buku..">
+                    <button type="button" class="btn btn-success"><i class="bi bi-search me-1"></i>Cari</button>
+                </div><br>
+            </div>
             <table class="table">
                 <thead class="table bg-dark text-white">
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col" class="col-md-4"><i class="bi bi-journal-richtext me-1"></i>Nama Buku</th>
-                        <th scope="col" class="col-md-4"><i class="bi bi-people-fill me-1"></i>Penulis</th>
+                        <th scope="col" class="col-md-4"><i class="bi bi-people-fill me-1"></i>Pengarang</th>
                         <th scope="col" class="col-md-2"><i class="bi bi-calendar-range-fill me-1"></i>Tahun</th>
                     </tr>
                 </thead>

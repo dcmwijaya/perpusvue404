@@ -24,16 +24,17 @@ main{
     margin: 0px 10px 0px 10px;
     font-weight: bold;
 }
+.input-group-text{
+    background-color: rgb(255, 188, 42);
+}
+.formin-group{
+    margin: 0px 20px 0px 20px;
+}
 
 /* Beranda */
 .Logo{
     min-width: 300px; max-width: auto;
     min-height: 200px; max-height: auto;
-}
-
-/* Katalog */
-.katalog{
-    /* margin-top: 50px; */
 }
 
 /* Footer */
