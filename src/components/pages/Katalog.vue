@@ -14,7 +14,7 @@
                     </div>
                 </div>
             </div><br>
-            <table class="table">
+            <table class="table table-warning table-striped">
                 <thead class="table bg-dark text-white">
                     <tr>
                         <th scope="col">ID</th>
@@ -24,35 +24,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="table-active">
-                        <th scope="row">1</th>
-                        <td>Things 1</td>
-                        <td>David Williams</td>
-                        <td>2018</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Things 2</td>
-                        <td>Robert San Diego</td>
-                        <td>2019</td>
-                    </tr>
-                    <tr class="table-active">
-                        <th scope="row">3</th>
-                        <td>Things 3</td>
-                        <td>John Thomson</td>
-                        <td>2020</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Things 4</td>
-                        <td>Napoleon Davinchi</td>
-                        <td>2021</td>
-                    </tr>
-                    <tr class="table-active">
-                        <th scope="row">5</th>
-                        <td>Things 5</td>
-                        <td>Stephanus Eoyone</td>
-                        <td>2022</td>
+                    <tr v-for="(book, index) in bookList" :key="index">
+                        <td>{{ index + 1 }}</td>
+                        <td>{{ book.judul }}</td>
+                        <td>{{ book.pengarang }}</td>
+                        <td>{{ book.tahun }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -62,6 +38,7 @@
 
 <script>
     export default {
-        name: 'MainApp'
+        name: 'MainApp',
+        props: ["bookList"]
     }
 </script>
