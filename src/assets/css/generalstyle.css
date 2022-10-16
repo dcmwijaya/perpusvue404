@@ -1,5 +1,5 @@
 /* Navbar */
-.navbar-bg{
+.navbar-bg {
     background: linear-gradient(-180deg, rgb(206, 187, 244), rgb(246, 231, 181));
     position: sticky;
     top: 0;
@@ -7,39 +7,61 @@
     font-weight: bold;
 }
 
-.navbar-link:hover{
+.navbar-link:hover {
     border: rgb(132, 72, 0) 1px;
-    border-style:double;
+    border-style: double;
     border-radius: 15px;
 }
 
 /* Body */
-body{
+body {
     font-family: monospace;
 }
-main{
-    padding: 50px 100px 10px 100px; /* Padding: Top, Right, Bottom, Left */
+
+main {
+    padding: 50px 100px 10px 100px;
+    /* Padding: Top, Right, Bottom, Left */
 }
-hr{
+
+hr {
     margin-bottom: 30px;
 }
-.btn-action{
+
+.btn-action {
     margin: 0px 10px 0px 10px;
     min-width: 80px;
     max-width: auto;
     font-weight: bold;
 }
-.input-group-text{
+
+.input-group-text {
     background-color: rgb(255, 188, 42);
 }
 
+.modal {
+    top: 50%;
+    left: 50%;
+    padding: 8% 0% 8% 0%;
+    transform: translate(-50%, -50%);
+}
+
+#formEdit {
+    padding: 10px 0px 10px 20px;
+}
+
+.span-text-center {
+    padding: 10px 0px 5px 0px;
+    display: flex;
+    justify-content: center
+}
+
 /* Beranda */
-.Logo{
+.Logo {
     max-width: auto;
     max-height: auto;
 }
 
 /* Footer */
-.footer-bg{
+.footer-bg {
     background: linear-gradient(-180deg, rgb(206, 187, 244), rgb(246, 231, 181));
 }
