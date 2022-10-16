@@ -2,13 +2,18 @@
     <main>
         <div class="katalog" style="text-align: center">
             <h1>Menu Katalog</h1>
-            <hr><br>
-            <div class="col-md-4">
-                <div class="input-group">
-                    <input type="text" class="form-control" aria-label="Search" placeholder="Cari data buku..">
-                    <button type="button" class="btn btn-success"><i class="bi bi-search me-1"></i>Cari</button>
-                </div><br>
-            </div>
+            <p class="text-muted">Pada menu ini anda dapat melihat data buku yang direpresentasikan melalui tabel. 
+                Selain itu anda juga dapat melakukan pencarian untuk menemukan data buku yang ada di website ini.</p><hr><br>
+            <div class="input-group">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-sm formin-group" aria-label="Search"
+                            placeholder="Cari data buku..">
+                        <button type="button" class="btn btn-sm btn-success"><i class="bi bi-search me-1"></i>Cari</button>
+                    </div>
+                </div>
+            </div><br>
             <table class="table">
                 <thead class="table bg-dark text-white">
                     <tr>

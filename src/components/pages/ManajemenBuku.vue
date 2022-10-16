@@ -1,31 +1,27 @@
 <template>
     <main>
         <div class="manjbuku" style="text-align: center">
-            <h1>Menu Manajemen Buku</h1><hr><br>
-            <div class="col-md-12">
-                <div class="input-group">
-                    <input type="text" class="form-control" aria-label="Search" placeholder="Cari data buku..">
-                    <button type="button" class="btn btn-success"><i class="bi bi-search me-1"></i>Cari</button>
-                </div>
-            </div><br>
+            <h1>Menu Manajemen Buku</h1>
+            <p class="text-muted">Pada menu ini anda dapat melihat data buku yang direpresentasikan melalui tabel.
+                Selain itu juga anda dapat mencari, menambah, mengubah, serta menghapus data buku yang ada di website ini.</p><hr><br>
             <div class="input-group">
                 <div class="col-md-4">
-                    <div class="input-group">
+                    <div class="input-group input-group-sm">
                         <span class="input-group-text"><i class="bi bi-journal-richtext me-1"></i>Buku</span>
-                        <input type="text" aria-label="First name" class="form-control formin-group" placeholder="Isi data..">
+                        <input type="text" aria-label="First name" class="form-control form-control-sm formin-group" placeholder="Isi data..">
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="input-group">
+                    <div class="input-group input-group-sm">
                         <span class="input-group-text"><i class="bi bi-people-fill me-1"></i>Pengarang</span>
-                        <input type="text" aria-label="First name" class="form-control formin-group" placeholder="Isi data..">
+                        <input type="text" aria-label="First name" class="form-control form-control-sm formin-group" placeholder="Isi data..">
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="input-group">
+                    <div class="input-group input-group-sm">
                         <span class="input-group-text"><i class="bi bi-calendar-range-fill me-1"></i>Tahun</span>
-                        <input type="text" aria-label="First name" class="form-control formin-group" placeholder="Isi data..">
-                        <button type="button" class="btn btn-warning"><i class="bi bi-journal-plus me-1"></i>Tambah</button>
+                        <input type="text" aria-label="First name" class="form-control form-control-sm formin-group" placeholder="Isi data..">
+                        <button type="button" class="btn btn-sm btn-warning"><i class="bi bi-journal-plus me-1"></i>Tambah</button>
                     </div>
                 </div>
             </div><br>
@@ -112,6 +108,15 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="input-group">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-sm formin-group" aria-label="Search" placeholder="Cari data buku..">
+                        <button type="button" class="btn btn-sm btn-success"><i class="bi bi-search me-1"></i>Cari</button>
+                    </div>
+                </div>
+            </div><br>
         </div>
     </main>
 </template>

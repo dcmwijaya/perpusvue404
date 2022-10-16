@@ -20,8 +20,13 @@ body{
 main{
     padding: 50px 100px 10px 100px; /* Padding: Top, Right, Bottom, Left */
 }
+hr{
+    margin-bottom: 30px;
+}
 .btn-action{
     margin: 0px 10px 0px 10px;
+    min-width: 80px;
+    max-width: auto;
     font-weight: bold;
 }
 .input-group-text{
@@ -33,8 +38,8 @@ main{
 
 /* Beranda */
 .Logo{
-    min-width: 300px; max-width: auto;
-    min-height: 200px; max-height: auto;
+    max-width: auto;
+    max-height: auto;
 }
 
 /* Footer */
