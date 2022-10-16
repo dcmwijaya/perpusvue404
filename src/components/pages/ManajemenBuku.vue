@@ -58,10 +58,10 @@
                             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                                 <div class="btn-group" role="group" aria-label="First group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary btn-action"
-                                        data-bs-toggle="modal" data-bs-target="#EditModal"><i
-                                            class="bi bi-journal-medical me-1"></i>Edit</button>
+                                        data-bs-toggle="modal" data-bs-target="#EditModal" @click="showEdit(book, index)">
+                                        <i class="bi bi-journal-medical me-1"></i>Edit</button>
                                     <button type="button" class="btn btn-sm btn-outline-danger btn-action"
-                                        data-bs-toggle="modal" data-bs-target="#HapusModal"><i
+                                        data-bs-toggle="modal" data-bs-target="#HapusModal" @click="showHapus(book, index)"><i
                                             class="bi bi-journal-x me-1"></i>Hapus</button>
                                 </div>
                             </div>
@@ -94,14 +94,14 @@
                 </div>
                 <div class="modal-body">
                     <div id="formEdit">
-                        <form class="form-row" @submit.prevent="submitEdit">
+                        <form class="form-row" @submit.prevent="submitChange">
                             <div class="row input-group">
                                 <div class="col-12">
                                     <div class="input-group input-group-sm">
                                         <span class="input-group-text col-3 text-primary"><i
                                                 class="bi bi-journal-richtext me-1"></i>Buku</span>
                                         <input type="text" aria-label="First name" class="form-control form-control-sm"
-                                            placeholder="Ubah judul buku..." v-model="newBook.judul">
+                                            placeholder="Ubah judul buku..." v-model="updatedBook.judul">
                                     </div>
                                 </div>
                             </div><br>
@@ -111,7 +111,7 @@
                                         <span class="input-group-text col-3 text-primary"><i
                                                 class="bi bi-people-fill me-1"></i>Pengarang</span>
                                         <input type="text" aria-label="First name" class="form-control form-control-sm"
-                                            placeholder="Ubah pengarang buku..." v-model="newBook.pengarang">
+                                            placeholder="Ubah pengarang buku..." v-model="updatedBook.pengarang">
                                     </div>
                                 </div>
                             </div><br>
@@ -122,7 +122,7 @@
                                                 class="bi bi-calendar-range-fill me-1"></i>Tahun</span>
                                         <input type="number" aria-label="First name"
                                             class="form-control form-control-sm" placeholder="Ubah tahun terbit buku..."
-                                            v-model="newBook.tahun">
+                                            v-model="updatedBook.tahun">
                                     </div>
                                 </div>
                             </div>
@@ -167,6 +167,13 @@
 export default {
     name: 'MainApp',
     props: ["bookList"],
+    bookIndex: "",
+    updateBook: {
+        _id: "",
+        judul: "",
+        pengarang: "",
+        tahun: ""
+    },
     methods: {
         submitAdd() {
             const bookCreated = {
@@ -178,6 +185,20 @@ export default {
             this.newBook.judul = "";
             this.newBook.pengarang = "";
             this.newBook.tahun = "";
+        },
+        submitChange() {
+            const bookChanged = this.updatedBook;
+            this.$emit("update", bookChanged, this.bookIndex);
+        },
+        showEdit(book, index){
+            this.bookIndex = index;
+            this.updatedBook._id = book._id;
+            this.updatedBook.judul = book.judul;
+            this.updatedBook.pengarang = book.pengarang;
+            this.updatedBook.tahun = book.tahun;
+        },
+        deleteBook(book, index) {
+            this.$emit("delete", book, index);
         }
     },
     data() {

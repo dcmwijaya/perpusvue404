@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <router-view :bookList="booksData" @store="storeData"/>
+  <router-view :bookList="booksData" @store="storeData" @update="updateData" @delete="deleteData" />
   <Footer />
 </template>
 
@@ -17,6 +17,14 @@
       storeData(bookCreated){
         console.log(bookCreated);
         alert("Data berhasil ditambahkan!");
+      },
+      updateData(bookChanged, bookIndex){
+        console.log(bookChanged, bookIndex);
+        alert("Data berhasil diubah!");
+      },
+      deleteData(book, index) {
+        console.log(book, index);
+        alert("Data berhasil dihapus!");
       }
     },
     data() {
