@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="katalog" style="text-align: center">
+        <div class="tampilDataKatalog" style="text-align: center">
             <h1>Menu Katalog</h1>
             <p class="text-muted">Pada menu ini anda dapat melihat data buku yang direpresentasikan melalui tabel. 
                 Selain itu anda juga dapat melakukan pencarian untuk menemukan data buku yang ada di website ini.</p><hr><br>
@@ -17,7 +17,7 @@
             <table class="table table-warning table-striped">
                 <thead class="table bg-dark text-white">
                     <tr>
-                        <th scope="col">ID</th>
+                        <th scope="col">No</th>
                         <th scope="col" class="col-md-4"><i class="bi bi-journal-richtext me-1"></i>Nama Buku</th>
                         <th scope="col" class="col-md-4"><i class="bi bi-people-fill me-1"></i>Pengarang</th>
                         <th scope="col" class="col-md-2"><i class="bi bi-calendar-range-fill me-1"></i>Tahun</th>

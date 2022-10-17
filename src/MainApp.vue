@@ -1,17 +1,21 @@
 <template>
   <Navbar />
-  <router-view :bookList="booksData" @store="storeData" @update="updateData" @delete="deleteData" />
+  <router-view 
+  :bookList="booksData" @store="storeData" 
+  @update="updateData" @delete="deleteData" />
   <Footer />
+  <Modal />
 </template>
 
 <script>
   import Navbar from './components/Navbar.vue';
   import Footer from './components/Footer.vue';
+  import Modal from './components/Modal.vue';
 
   export default {
     name: 'MainApp',
     components: {
-      Navbar, Footer
+      Navbar, Footer, Modal
     },
     methods: {
       storeData(bookCreated){
@@ -20,11 +24,11 @@
       },
       updateData(bookChanged, bookIndex){
         console.log(bookChanged, bookIndex);
-        alert("Data berhasil diubah!");
+        alert("Data dengan ID='"+ bookIndex +"' berhasil diubah!");
       },
-      deleteData(book, index) {
-        console.log(book, index);
-        alert("Data berhasil dihapus!");
+      deleteData(book, bookIndex) {
+        console.log(book, bookIndex);
+        alert("Data dengan ID='"+ bookIndex +"' berhasil dihapus!");
       }
     },
     data() {
