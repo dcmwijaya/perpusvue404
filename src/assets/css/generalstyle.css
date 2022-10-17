@@ -17,38 +17,31 @@
 body {
     font-family: monospace;
 }
-
 main {
     padding: 50px 100px 10px 100px;
     /* Padding: Top, Right, Bottom, Left */
 }
-
 hr {
     margin-bottom: 30px;
 }
-
 .btn-action {
     margin: 0px 10px 0px 10px;
     min-width: 80px;
     max-width: auto;
     font-weight: bold;
 }
-
-.input-group-text {
+.bginput-create {
     background-color: rgb(255, 188, 42);
 }
-
+.bginput-update {
+    background-color: rgb(40, 179, 233);
+}
 .modal {
     top: 50%;
     left: 50%;
     padding: 8% 0% 8% 0%;
     transform: translate(-50%, -50%);
 }
-
-#formEdit {
-    padding: 10px 0px 10px 20px;
-}
-
 .span-text-center {
     padding: 10px 0px 5px 0px;
     display: flex;

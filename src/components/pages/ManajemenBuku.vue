@@ -27,21 +27,21 @@
                     <div class="row">
                         <div class="col-3">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-text"><i class="bi bi-journal-richtext me-1"></i>Buku</span>
+                                <span class="input-group-text bginput-create"><i class="bi bi-journal-richtext me-1"></i>Buku</span>
                                 <input type="text" aria-label="First name" class="form-control form-control-sm"
                                     placeholder="Isi data.." v-model="newBook.judul">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-text"><i class="bi bi-people-fill me-1"></i>Pengarang</span>
+                                <span class="input-group-text bginput-create"><i class="bi bi-people-fill me-1"></i>Pengarang</span>
                                 <input type="text" aria-label="First name" class="form-control form-control-sm"
                                     placeholder="Isi data.." v-model="newBook.pengarang">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-text"><i
+                                <span class="input-group-text bginput-create"><i
                                         class="bi bi-calendar-range-fill me-1"></i>Tahun</span>
                                 <input type="number" aria-label="First name" class="form-control form-control-sm"
                                     placeholder="Isi data.." v-model="newBook.tahun">
@@ -49,37 +49,37 @@
                         </div>
                         <div class="col-2">
                             <button type="submit" class="btn btn-sm btn-warning col-12">
-                                <i class="bi bi-journal-plus me-1"></i>Tambah</button>
+                                <i class="bi bi-check2-square me-1"></i>Tambah</button>
                         </div>
                     </div>
                 </form>
-            </div><br>
+            </div>
             <div id="formEdit" v-if="formMode == 'edit'">
                 <form class="form-row" @submit.prevent="submitChange">
-                    <div class="row input-group">
+                    <div class="row">
                         <div class="col-3">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-text"><i class="bi bi-journal-richtext me-1"></i>Buku</span>
+                                <span class="input-group-text bginput-update"><i class="bi bi-journal-richtext me-1"></i>Buku</span>
                                 <input type="text" aria-label="First name" class="form-control form-control-sm" placeholder="Ubah judul buku..."
                                     v-model="updatedBook.judul">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-text"><i class="bi bi-people-fill me-1"></i>Pengarang</span>
+                                <span class="input-group-text bginput-update"><i class="bi bi-people-fill me-1"></i>Pengarang</span>
                                 <input type="text" aria-label="First name" class="form-control form-control-sm" placeholder="Ubah pengarang buku..."
                                     v-model="updatedBook.pengarang">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-text"><i class="bi bi-calendar-range-fill me-1"></i>Tahun</span>
+                                <span class="input-group-text bginput-update"><i class="bi bi-calendar-range-fill me-1"></i>Tahun</span>
                                 <input type="number" aria-label="First name" class="form-control form-control-sm"
-                                    placeholder="Ubah tahun terbit buku..." v-model="updatedBook.tahun">
+                                    placeholder="Ubah tahun..." v-model="updatedBook.tahun">
                             </div>
                         </div>
                         <div class="col-2">
-                            <button type="submit" class="btn btn-sm btn-info col-12" @click="showEdit(book, index)">
+                            <button type="submit" class="btn btn-sm btn-info col-12">
                                 <i class="bi bi-check2-square me-1"></i>Ubah</button>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                             <td>
                                 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                                     <div class="btn-group" role="group" aria-label="First group">
-                                        <button @click="formMode = 'edit'" type="button" class="btn btn-sm btn-outline-secondary btn-action">
+                                        <button @click="showEdit(book, index)" type="button" class="btn btn-sm btn-outline-secondary btn-action">
                                             <i class="bi bi-journal-medical me-1"></i>Edit</button>
                                         <button @click="HapusBuku(book, index)" type="button" class="btn btn-sm btn-outline-danger btn-action">
                                             <i class="bi bi-journal-x me-1"></i>Hapus</button>
@@ -162,7 +162,7 @@ export default {
             },
             formMode: "",
             bookIndex: "",
-            updateBook: {
+            updatedBook: {
                 _id: "",
                 judul: "",
                 pengarang: "",
