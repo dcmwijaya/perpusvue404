@@ -12,12 +12,16 @@
                         <button type="submit" class="btn btn-warning col-12" @click="formMode = 'create'">
                             <i class="bi bi-journal-plus me-1"></i>Tambah Buku</button>
                     </div>
-                    <div class="col-md-6"></div>
-                    <div class="col-md-4">
+                    <div class="col-4"></div>
+                    <div class="col-2">
+                        <a href="/ManajemenBuku" type="button" class="btn btn-secondary">
+                            <i class="bi bi-arrow-clockwise me-1"></i> Refresh</a>
+                    </div>
+                    <div class="col-4">
                         <div class="input-group">
-                            <input type="text" class="form-control formin-group search_data" aria-label="Search"
-                                placeholder="Cari data buku.." name="Search">
-                            <button @click="search_Data(book, index)" type="button" class="btn btn-success"><i class="bi bi-search me-1"></i>Cari</button>
+                            <input type="text" class="form-control formin-group" aria-label="Search" placeholder="Cari data buku..">
+                            <button @click="search_Data(book, index)" type="button" class="btn btn-success"><i
+                                    class="bi bi-search me-1"></i>Cari</button>
                         </div>
                     </div>
                 </div>
@@ -91,20 +95,20 @@
                         <div class="col-4">
                             <div class="input-group input-group-sm">
                                 <span class="input-group-text bginput-search"><i class="bi bi-journal-richtext me-1"></i>Buku</span>
-                                <input type="text" aria-label="First name" class="form-control form-control-sm" v-model="searchData.judul">
+                                <input type="text" aria-label="First name" class="form-control form-control-sm" v-model="searchData.judul" disabled readonly>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="input-group input-group-sm">
                                 <span class="input-group-text bginput-search"><i class="bi bi-people-fill me-1"></i>Pengarang</span>
-                                <input type="text" aria-label="First name" class="form-control form-control-sm" v-model="searchData.pengarang">
+                                <input type="text" aria-label="First name" class="form-control form-control-sm" v-model="searchData.pengarang" disabled readonly>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="input-group input-group-sm">
                                 <span class="input-group-text bginput-search"><i
                                         class="bi bi-calendar-range-fill me-1"></i>Tahun</span>
-                                <input type="number" aria-label="First name" class="form-control form-control-sm" v-model="searchData.tahun">
+                                <input type="number" aria-label="First name" class="form-control form-control-sm" v-model="searchData.tahun" disabled readonly>
                             </div>
                         </div>
                     </div>
