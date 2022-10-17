@@ -36,6 +36,10 @@ hr {
 .bginput-update {
     background-color: rgb(40, 179, 233);
 }
+.bginput-search {
+    background-color: rgb(4, 122, 55);
+    color: white;
+}
 .modal {
     top: 50%;
     left: 50%;

@@ -15,9 +15,9 @@
                     <div class="col-md-6"></div>
                     <div class="col-md-4">
                         <div class="input-group">
-                            <input type="text" class="form-control formin-group" aria-label="Search"
-                                placeholder="Cari data buku..">
-                            <button type="button" class="btn btn-success"><i class="bi bi-search me-1"></i>Cari</button>
+                            <input type="text" class="form-control formin-group search_data" aria-label="Search"
+                                placeholder="Cari data buku.." name="Search">
+                            <button @click="search_Data(book, index)" type="button" class="btn btn-success"><i class="bi bi-search me-1"></i>Cari</button>
                         </div>
                     </div>
                 </div>
@@ -81,6 +81,31 @@
                         <div class="col-2">
                             <button type="submit" class="btn btn-sm btn-info col-12">
                                 <i class="bi bi-check2-square me-1"></i>Ubah</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="formCari" v-if="formMode == 'search'">
+                <form class="form-row">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bginput-search"><i class="bi bi-journal-richtext me-1"></i>Buku</span>
+                                <input type="text" aria-label="First name" class="form-control form-control-sm" v-model="searchData.judul">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bginput-search"><i class="bi bi-people-fill me-1"></i>Pengarang</span>
+                                <input type="text" aria-label="First name" class="form-control form-control-sm" v-model="searchData.pengarang">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bginput-search"><i
+                                        class="bi bi-calendar-range-fill me-1"></i>Tahun</span>
+                                <input type="number" aria-label="First name" class="form-control form-control-sm" v-model="searchData.tahun">
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -151,18 +176,33 @@ export default {
         },
         HapusBuku(book, index) {
             this.$emit("delete", book, index);
+        },
+        search_Data(book, index) {
+            this.formMode = "search";
+            this.$emit("search", book, index);
+            this.bookIndex = index;
+            this.searchData._id = book._id;
+            this.searchData.judul = book.judul;
+            this.searchData.pengarang = book.pengarang;
+            this.searchData.tahun = book.tahun;
         }
     },
     data() {
         return {
+            formMode: "",
+            bookIndex: "",
             newBook: {
                 judul: "",
                 pengarang: "",
                 tahun: ""
             },
-            formMode: "",
-            bookIndex: "",
             updatedBook: {
+                _id: "",
+                judul: "",
+                pengarang: "",
+                tahun: ""
+            },
+            searchData: {
                 _id: "",
                 judul: "",
                 pengarang: "",

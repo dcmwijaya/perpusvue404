@@ -2,7 +2,8 @@
   <Navbar />
   <router-view 
   :bookList="booksData" @store="storeData" 
-  @update="updateData" @delete="deleteData" />
+  @update="updateData" @delete="deleteData"
+  @search="searchData" />
   <Footer />
   <Modal />
 </template>
@@ -29,6 +30,10 @@
       deleteData(book, bookIndex) {
         console.log(book, bookIndex);
         alert("Data dengan ID='"+ bookIndex +"' berhasil dihapus!");
+      },
+      searchData(book, bookIndex){
+        console.log(book, bookIndex);
+        alert("Data dengan ID='"+ bookIndex +"' berhasil ditemukan!");
       }
     },
     data() {
