@@ -18,10 +18,9 @@
                             <i class="bi bi-arrow-clockwise me-1"></i> Refresh</a>
                     </div>
                     <div class="col-4">
-                        <div class="input-group">
-                            <input id="inputSearch" type="text" class="form-control formin-group" aria-label="Search" placeholder="Cari judul buku..">
-                            <button id="buttonSearch" @click="search_Data(book)" type="button" class="btn btn-success"><i
-                                    class="bi bi-search me-1"></i>Cari</button>
+                        <div class="input-group">    
+                            <input id="inSearchMnj" type="text" class="form-control formin-group" aria-label="Search" placeholder="Cari judul buku..">
+                            <button @click="search_Data(book)" type="submit" class="btn btn-success"><i class="bi bi-search me-1"></i>Cari</button>
                         </div>
                     </div>
                 </div>
@@ -183,19 +182,18 @@ export default {
         },
         search_Data(book) {
             this.formMode = "search";
-            let Searchinput = document.getElementById('inputSearch');
             this.$emit("search", book);
-            for(var i=0; i<book.length; i++){
-                if (Searchinput == book.judul[i]) {
-                    this.searchData.judul = book.judul[i];
-                    this.searchData.pengarang = book.pengarang[i];
-                    this.searchData.tahun = book.tahun[i];                    
-                }
-                else {
-                    this.searchData.judul = "NULL";
-                    this.searchData.pengarang = "NULL";
-                    this.searchData.tahun = "NULL";
-                }
+            var InputSearchMnj = document.getElementById("inSearchMnj");
+
+            if (InputSearchMnj === this.bookList._id) {
+                this.searchData.judul = book.judul;
+                this.searchData.pengarang = book.pengarang;
+                this.searchData.tahun = book.tahun;        
+            }
+            else {
+                this.searchData.judul = "Dummy";
+                this.searchData.pengarang = "Dummy";
+                this.searchData.tahun = "Dummy";
             }
         }
     },

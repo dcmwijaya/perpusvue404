@@ -31,7 +31,7 @@
       },
       searchData(book, bookIndex){
         console.log(book, bookIndex);
-        alert("Data dengan ID='"+ bookIndex +"' berhasil ditemukan!");
+        alert("Pencarian data masih belum difungsikan!");
       }
     },
     data() {

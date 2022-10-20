@@ -13,8 +13,8 @@
                     </div>
                     <div class="col-4">
                         <div class="input-group">
-                            <input type="text" class="form-control formin-group" aria-label="Search" placeholder="Cari judul buku..">
-                            <button @click="search_Data(book, index)" type="button" class="btn btn-success"><i class="bi bi-search me-1"></i>Cari</button>
+                            <input id="inSearchKtg" type="text" class="form-control formin-group" aria-label="Search" placeholder="Cari judul buku..">
+                            <button @click="search_Data(book)" type="submit" class="btn btn-success"><i class="bi bi-search me-1"></i>Cari</button>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                             <div class="input-group input-group-sm">
                                 <span class="input-group-text bginput-search"><i
                                         class="bi bi-calendar-range-fill me-1"></i>Tahun</span>
-                                <input type="number" aria-label="First name" class="form-control form-control-sm"
+                                <input type="text" aria-label="First name" class="form-control form-control-sm"
                                     v-model="searchData.tahun" disabled readonly>
                             </div>
                         </div>
@@ -74,14 +74,21 @@
         name: 'MainApp',
         props: ["bookList"],
         methods: {
-            search_Data(book, index) {
-                this.$emit("search", book, index);
+            search_Data(book) {
                 this.formMode = "search";
-                this.bookIndex = index;
-                this.searchData._id = book._id;
-                this.searchData.judul = book.judul;
-                this.searchData.pengarang = book.pengarang;
-                this.searchData.tahun = book.tahun;
+                this.$emit("search", book);
+                var InputSearchKtg = document.getElementById("inSearchKtg");
+
+                if (InputSearchKtg == this.bookList._id) {
+                    this.searchData.judul = book.judul;
+                    this.searchData.pengarang = book.pengarang;
+                    this.searchData.tahun = book.tahun;
+                }
+                else {
+                    this.searchData.judul = "Dummy";
+                    this.searchData.pengarang = "Dummy";
+                    this.searchData.tahun = "Dummy";
+                }
             }
         },
         data() {
