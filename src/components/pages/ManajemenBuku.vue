@@ -19,8 +19,8 @@
                     </div>
                     <div class="col-4">
                         <div class="input-group">
-                            <input type="text" class="form-control formin-group" aria-label="Search" placeholder="Cari judul buku..">
-                            <button @click="search_Data(book, index)" type="button" class="btn btn-success"><i
+                            <input id="inputSearch" type="text" class="form-control formin-group" aria-label="Search" placeholder="Cari judul buku..">
+                            <button id="buttonSearch" @click="search_Data(book)" type="button" class="btn btn-success"><i
                                     class="bi bi-search me-1"></i>Cari</button>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                     <div class="row">
                         <div class="col-3">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-text bginput-create"><i class="bi bi-journal-richtext me-1"></i>Buku</span>
+                                <span class="input-group-text bginput-create"><i class="bi bi-journal-richtext me-1"></i>Judul</span>
                                 <input type="text" aria-label="First name" class="form-control form-control-sm"
                                     placeholder="Isi data.." v-model="newBook.judul">
                             </div>
@@ -63,7 +63,7 @@
                     <div class="row">
                         <div class="col-3">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-text bginput-update"><i class="bi bi-journal-richtext me-1"></i>Buku</span>
+                                <span class="input-group-text bginput-update"><i class="bi bi-journal-richtext me-1"></i>Judul</span>
                                 <input type="text" aria-label="First name" class="form-control form-control-sm" placeholder="Ubah judul buku..."
                                     v-model="updatedBook.judul">
                             </div>
@@ -94,7 +94,7 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="input-group input-group-sm">
-                                <span class="input-group-text bginput-search"><i class="bi bi-journal-richtext me-1"></i>Buku</span>
+                                <span class="input-group-text bginput-search"><i class="bi bi-journal-richtext me-1"></i>Judul</span>
                                 <input type="text" aria-label="First name" class="form-control form-control-sm" v-model="searchData.judul" disabled readonly>
                             </div>
                         </div>
@@ -108,7 +108,7 @@
                             <div class="input-group input-group-sm">
                                 <span class="input-group-text bginput-search"><i
                                         class="bi bi-calendar-range-fill me-1"></i>Tahun</span>
-                                <input type="number" aria-label="First name" class="form-control form-control-sm" v-model="searchData.tahun" disabled readonly>
+                                <input type="text" aria-label="First name" class="form-control form-control-sm" v-model="searchData.tahun" disabled readonly>
                             </div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@
                     <thead class="table bg-dark text-white">
                         <tr>
                             <th scope="col">No</th>
-                            <th scope="col" class="col-md-4"><i class="bi bi-journal-richtext me-1"></i>Nama Buku</th>
+                            <th scope="col" class="col-md-4"><i class="bi bi-journal-richtext me-1"></i>Judul Buku</th>
                             <th scope="col" class="col-md-4"><i class="bi bi-people-fill me-1"></i>Pengarang</th>
                             <th scope="col" class="col-md-2"><i class="bi bi-calendar-range-fill me-1"></i>Tahun</th>
                             <th scope="col" class="col-md-2"><i class="bi bi-activity me-1"></i>Aksi</th>
@@ -181,14 +181,22 @@ export default {
         HapusBuku(book, index) {
             this.$emit("delete", book, index);
         },
-        search_Data(book, index) {
+        search_Data(book) {
             this.formMode = "search";
-            this.$emit("search", book, index);
-            this.bookIndex = index;
-            this.searchData._id = book._id;
-            this.searchData.judul = book.judul;
-            this.searchData.pengarang = book.pengarang;
-            this.searchData.tahun = book.tahun;
+            let Searchinput = document.getElementById('inputSearch');
+            this.$emit("search", book);
+            for(var i=0; i<book.length; i++){
+                if (Searchinput == book.judul[i]) {
+                    this.searchData.judul = book.judul[i];
+                    this.searchData.pengarang = book.pengarang[i];
+                    this.searchData.tahun = book.tahun[i];                    
+                }
+                else {
+                    this.searchData.judul = "NULL";
+                    this.searchData.pengarang = "NULL";
+                    this.searchData.tahun = "NULL";
+                }
+            }
         }
     },
     data() {
