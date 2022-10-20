@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-4">
                         <div class="input-group">
-                            <input type="text" class="form-control formin-group" aria-label="Search" placeholder="Cari data buku..">
+                            <input type="text" class="form-control formin-group" aria-label="Search" placeholder="Cari judul buku..">
                             <button @click="search_Data(book, index)" type="button" class="btn btn-success"><i class="bi bi-search me-1"></i>Cari</button>
                         </div>
                     </div>

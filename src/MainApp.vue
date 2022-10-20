@@ -5,18 +5,16 @@
   @update="updateData" @delete="deleteData"
   @search="searchData" />
   <Footer />
-  <Modal />
 </template>
 
 <script>
   import Navbar from './components/Navbar.vue';
   import Footer from './components/Footer.vue';
-  import Modal from './components/Modal.vue';
 
   export default {
     name: 'MainApp',
     components: {
-      Navbar, Footer, Modal
+      Navbar, Footer
     },
     methods: {
       storeData(bookCreated){
