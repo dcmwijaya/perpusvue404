@@ -42,6 +42,16 @@ npm run serve
 
 <br><br>
 
+## Documentation
+<img alt="home" src="https://github.com/devancakra/perpusvue404/assets/54527592/c373531d-e6f6-4864-9d09-6232727dcc93"><br><br>
+<img alt="catalog" src="https://github.com/devancakra/perpusvue404/assets/54527592/e07a8e77-27d0-47b2-ab63-622fdb922835"><br><br>
+<img alt="search" src="https://github.com/devancakra/perpusvue404/assets/54527592/12a27eb6-69ed-435b-85aa-9796e72a7597"><br><br>
+<img alt="add-book" src="https://github.com/devancakra/perpusvue404/assets/54527592/8fc42ada-67e7-454f-bc50-84d749428355"><br><br>
+<img alt="edit-book" src="https://github.com/devancakra/perpusvue404/assets/54527592/d018dda6-2fe6-42b2-b5e8-82f6472e00c2"><br><br>
+<img alt="delete-book" src="https://github.com/devancakra/perpusvue404/assets/54527592/ff7cdd35-c0d2-4a3f-a867-5d0a60efe674"><br>
+
+<br><br>
+
 ## LICENSE
 MIT License - Copyright (c) 2023 - Devan C. M. Wijaya, S.Kom
 
