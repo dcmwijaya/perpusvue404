@@ -23,9 +23,22 @@ https://nodejs.org/en/download
 <br>
 
 ## Running
-1.
-2.
-3.
+1.Open the "perpusvue404" directory, then open CMD inside the directory.<br>
+<ul>
+<li>First, If you have not installed vue/cli, run the command:</li>
+
+````bash
+npm install -g @vue/cli
+````
+
+<li>Secondly, this step is mandatory, so please copy the following command:</li>
+
+````bash
+npm run serve
+````
+</ul>
+2.Open your browser (New tab), then type -> http://localhost:8080/ or customize the one on your CMD.<br>
+3.Please access the features and enjoy [Done].
 
 <br><br>
 
