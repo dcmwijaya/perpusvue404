@@ -6,3 +6,34 @@
 
 # PerpusVue404
 <p>PerpusVue404 merupakan hasil dari pelatihan reguler CAMP404 Batch 16 yang saya kerjakan secara custom.</p>
+
+<br>
+
+## Download & Install
+1.Visual Studio Code :
+```bash
+https://code.visualstudio.com/docs/?dv=win
+```
+2.NodeJS :
+```bash
+https://nodejs.org/en/download
+```
+3.Visual Studio Code Extensions : Prettier & Vetur
+
+<br>
+
+## Running
+1.
+2.
+3.
+
+<br><br>
+
+## LICENSE
+MIT License - Copyright (c) 2023 - Devan C. M. Wijaya, S.Kom
+
+Permission is hereby granted without charge to any person obtaining a copy of this software and the software-related documentation files to deal in them without restriction, including without limitation the right to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons receiving the Software to be furnished therewith on the following terms:
+
+The above copyright notice and this permission notice must accompany all copies or substantial portions of the Software.
+
+IN ANY EVENT, THE AUTHOR OR COPYRIGHT HOLDER HEREIN RETAINS FULL OWNERSHIP RIGHTS. THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, THEREFORE IF ANY DAMAGE, LOSS, OR OTHERWISE ARISES FROM THE USE OR OTHER DEALINGS IN THE SOFTWARE, THE AUTHOR OR COPYRIGHT HOLDER SHALL NOT BE LIABLE, AS THE USE OF THE SOFTWARE IS NOT COMPELLED AT ALL, SO THE RISK IS YOUR OWN.
