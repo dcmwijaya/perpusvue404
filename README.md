@@ -5,7 +5,7 @@
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap%205-white.svg?&logo=bootstrap)
 
 # PerpusVue404
-<p>PerpusVue404 merupakan hasil dari pelatihan reguler CAMP404 Batch 16 yang saya kerjakan secara custom.</p>
+<p>PerpusVue404 is the result of the regular CAMP404 Batch 16 training that I customized.</p>
 
 <br>
 
