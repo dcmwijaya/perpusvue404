@@ -40,9 +40,9 @@
    npm run serve
    ````
 
-3. Open your browser (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your CMD.<br>
+2. Open your browser (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your CMD.<br>
 
-4. Please access the features and enjoy [Done].
+3. Please access the features and enjoy [Done].
 
 <br>
 
