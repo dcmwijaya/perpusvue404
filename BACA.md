@@ -10,37 +10,42 @@
 <br>
 
 ## Unduh & Instal
-1.Visual Studio Code :
-```bash
-https://code.visualstudio.com/docs/?dv=win
-```
-2.NodeJS :
-```bash
-https://nodejs.org/en/download
-```
-3.Visual Studio Code Extensions : Prettier & Vetur
+1. Visual Studio Code :
+   
+   ```bash
+   https://code.visualstudio.com/docs/?dv=win
+   ```
+2. NodeJS :
+   
+   ```bash
+   https://nodejs.org/en/download
+   ```
+   
+3. Visual Studio Code Extensions : ``` Prettier & Vetur ```
 
 <br>
 
 ## Menjalankan
-1.Buka direktori "perpusvue404", lalu buka CMD di dalam direktori tersebut.<br>
+1. Buka direktori ``` perpusvue404 ```, lalu buka CMD di dalam direktori tersebut.<br>
 <ul>
-<li>Pertama, Jika Anda belum menginstal vue/cli, jalankan perintah:</li>
+  <li>Pertama, Jika Anda belum menginstal vue/cli, jalankan perintah:</li><br>
+  
+  ````bash
+  npm install -g @vue/cli
+  ````
 
-````bash
-npm install -g @vue/cli
-````
-
-<li>Kedua, langkah ini wajib dilakukan, jadi silakan salin perintah berikut:</li>
-
-````bash
-npm run serve
-````
+  <li>Kedua, langkah ini wajib dilakukan, jadi silakan salin perintah berikut:</li><br>
+  
+  ````bash
+  npm run serve
+  ````
 </ul>
-2.Buka browser Anda (Tab baru), lalu ketik -> http://localhost:8080/ atau sesuaikan yang ada di CMD Anda.<br>
-3.Silakan akses fitur-fiturnya dan nikmatilah [Selesai].
 
-<br><br>
+2. Buka browser Anda (Tab baru), lalu ketik -> ``` http://localhost:8080/ ``` atau sesuaikan yang ada di CMD Anda.<br>
+
+3. Silakan akses fitur-fiturnya dan nikmatilah [Selesai].
+
+<br>
 
 ## Sorotan
 <table>
@@ -68,7 +73,7 @@ npm run serve
 </tr>
 </table>
 
-<br><br>
+<br>
 
 ## LISENSI 
 LISENSI MIT - Hak Cipta (c) 2022 - Devan C. M. Wijaya, S.Kom
