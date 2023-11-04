@@ -10,35 +10,40 @@
 <br>
 
 ## Download & Install
-1.Visual Studio Code :
-```bash
-https://code.visualstudio.com/docs/?dv=win
-```
-2.NodeJS :
-```bash
-https://nodejs.org/en/download
-```
-3.Visual Studio Code Extensions : Prettier & Vetur
+1. Visual Studio Code :
+   
+   ```bash
+   https://code.visualstudio.com/docs/?dv=win
+   ```
+2. NodeJS :
+   
+   ```bash
+   https://nodejs.org/en/download
+   ```
+   
+3. Visual Studio Code Extensions : ``` Prettier & Vetur ```
 
 <br>
 
 ## Running
-1.Open the "perpusvue404" directory, then open CMD inside the directory.<br>
+1. Open the ``` perpusvue404 ``` directory, then open CMD inside the directory.<br>
 <ul>
-<li>First, If you have not installed vue/cli, run the command:</li>
+  <li>First, If you have not installed vue/cli, run the command:</li><br>
+  
+  ````bash
+  npm install -g @vue/cli
+  ````
 
-````bash
-npm install -g @vue/cli
-````
-
-<li>Secondly, this step is mandatory, so please copy the following command:</li>
-
-````bash
-npm run serve
-````
+  <li>Secondly, this step is mandatory, so please copy the following command:</li><br>
+  
+  ````bash
+  npm run serve
+  ````
 </ul>
-2.Open your browser (New tab), then type -> http://localhost:8080/ or customize the one on your CMD.<br>
-3.Please access the features and enjoy [Done].
+
+2. Open your browser (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your CMD.<br>
+
+3. Please access the features and enjoy [Done].
 
 <br><br>
 
