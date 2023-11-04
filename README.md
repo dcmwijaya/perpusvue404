@@ -45,7 +45,7 @@
 
 3. Please access the features and enjoy [Done].
 
-<br><br>
+<br>
 
 ## Highlights
 <table>
@@ -73,7 +73,7 @@
 </tr>
 </table>
 
-<br><br>
+<br>
 
 ## LICENSE
 MIT License - Copyright (c) 2022 - Devan C. M. Wijaya, S.Kom
