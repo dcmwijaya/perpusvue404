@@ -26,24 +26,23 @@
 <br>
 
 ## Running
-1. Open the ``` perpusvue404 ``` directory, then open CMD inside the directory.<br>
-<ul>
-  <li>First, If you have not installed vue/cli, run the command:</li><br>
-  
-  ````bash
-  npm install -g @vue/cli
-  ````
+1. Open the ``` perpusvue404 ``` directory, then open ``` CMD ``` inside the directory.<br>
 
-  <li>Secondly, this step is mandatory, so please copy the following command:</li><br>
-  
-  ````bash
-  npm run serve
-  ````
-</ul>
+   • First, If you have ``` not installed vue/cli ```, run the command:<br>
 
-2. Open your browser (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your CMD.<br>
+   ````bash
+   npm install -g @vue/cli
+   ````
 
-3. Please access the features and enjoy [Done].
+   • Secondly, this step is mandatory, so please copy the following command:<br>
+
+   ````bash
+   npm run serve
+   ````
+
+3. Open your browser (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your CMD.<br>
+
+4. Please access the features and enjoy [Done].
 
 <br>
 
