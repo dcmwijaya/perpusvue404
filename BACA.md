@@ -25,7 +25,7 @@
 
 <br>
 
-## Menjalankan
+## Memulai
 1. Buka direktori ``` perpusvue404 ```, lalu buka ``` CMD ``` di dalam direktori tersebut.<br>
 
    • Pertama, Jika Anda ``` belum menginstal vue/cli ```, jalankan perintah:<br>
@@ -71,6 +71,11 @@
 <td><img src="https://github.com/devancakra/perpusvue404/assets/54527592/ff7cdd35-c0d2-4a3f-a867-5d0a60efe674" alt="delete-book"></td>
 </tr>
 </table>
+
+<br>
+
+## Penafian
+Aplikasi ini dibuat dengan menyertakan sumber-sumber dari pihak ketiga. Pihak ketiga di sini adalah penyedia layanan, yang layanannya berupa pustaka, kerangka kerja, dan lain-lain. Saya ucapkan terima kasih banyak atas layanannya. Telah terbukti sangat membantu dan dapat diimplementasikan.
 
 <br>
 
