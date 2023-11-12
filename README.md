@@ -26,7 +26,9 @@
 <br>
 
 ## Get Started
-1. Open the ``` perpusvue404 ``` directory, then open ``` CMD ``` inside the directory.<br>
+1. Download and extract this repository.
+   
+2. Open the ``` perpusvue404 ``` directory, then open ``` CMD ``` inside the directory.<br>
 
    • First, If you have ``` not installed vue/cli ```, run the command:<br>
 
@@ -40,9 +42,9 @@
    npm run serve
    ````
 
-2. Open your ``` browser ``` (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your ``` CMD ```.<br>
+3. Open your ``` browser ``` (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your ``` CMD ```.<br>
 
-3. Please access the features and enjoy [Done].
+4. Please access the features and enjoy [Done].
 
 <br>
 
