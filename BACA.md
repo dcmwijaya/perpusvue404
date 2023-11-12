@@ -26,7 +26,8 @@
 <br>
 
 ## Memulai
-1. Buka direktori ``` perpusvue404 ```, lalu buka ``` CMD ``` di dalam direktori tersebut.<br>
+1. Unduh dan ekstrak repositori ini.<br>
+2. Buka direktori ``` perpusvue404 ```, lalu buka ``` CMD ``` di dalam direktori tersebut.<br>
 
    • Pertama, Jika anda ``` belum menginstal vue/cli ```, jalankan perintah:<br>
 
@@ -40,9 +41,9 @@
    npm run serve
    ````
 
-2. Buka ``` peramban ``` anda (Tab baru), lalu ketik -> ``` http://localhost:8080/ ``` atau sesuaikan yang ada di ``` CMD ``` anda.<br>
+3. Buka ``` peramban ``` anda (Tab baru), lalu ketik -> ``` http://localhost:8080/ ``` atau sesuaikan yang ada di ``` CMD ``` anda.<br>
 
-3. Silakan akses fitur-fiturnya dan nikmatilah [Selesai].
+4. Silakan akses fitur-fiturnya dan nikmatilah [Selesai].
 
 <br>
 
