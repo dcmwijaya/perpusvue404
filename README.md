@@ -25,7 +25,7 @@
 
 <br>
 
-## Running
+## Get Started
 1. Open the ``` perpusvue404 ``` directory, then open ``` CMD ``` inside the directory.<br>
 
    • First, If you have ``` not installed vue/cli ```, run the command:<br>
@@ -71,6 +71,11 @@
 <td><img src="https://github.com/devancakra/perpusvue404/assets/54527592/ff7cdd35-c0d2-4a3f-a867-5d0a60efe674" alt="delete-book"></td>
 </tr>
 </table>
+
+<br>
+
+## Disclaimer
+This application has been created by including third-party sources. Third parties here are service providers, whose services are in the form of libraries, frameworks, and others. I thank you very much for the service. It has proven to be very helpful and implementable.
 
 <br>
 
