@@ -28,7 +28,7 @@
 ## Memulai
 1. Buka direktori ``` perpusvue404 ```, lalu buka ``` CMD ``` di dalam direktori tersebut.<br>
 
-   • Pertama, Jika Anda ``` belum menginstal vue/cli ```, jalankan perintah:<br>
+   • Pertama, Jika anda ``` belum menginstal vue/cli ```, jalankan perintah:<br>
 
    ````bash
    npm install -g @vue/cli
@@ -40,7 +40,7 @@
    npm run serve
    ````
 
-2. Buka browser Anda (Tab baru), lalu ketik -> ``` http://localhost:8080/ ``` atau sesuaikan yang ada di CMD Anda.<br>
+2. Buka ``` peramban ``` anda (Tab baru), lalu ketik -> ``` http://localhost:8080/ ``` atau sesuaikan yang ada di ``` CMD ``` anda.<br>
 
 3. Silakan akses fitur-fiturnya dan nikmatilah [Selesai].
 
