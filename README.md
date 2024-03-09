@@ -39,7 +39,7 @@
 
    ``` Prettier & Vetur ```
    
-   </td></tr></table><br>
+   </td></tr></table>
 
 <br><br>
 
