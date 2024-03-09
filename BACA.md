@@ -13,42 +13,66 @@
 <br>
 
 ## Unduh & Instal
-1. Visual Studio Code :
-   
-   ```bash
+1. Visual Studio Code
+
+   <table><tr><td width="810">
+      
+   ```
    https://code.visualstudio.com/docs/?dv=win
    ```
-2. NodeJS :
    
+   </td></tr></table><br>
+   
+2. NodeJS
+
+   <table><tr><td width="810">
+      
    ```bash
    https://nodejs.org/en/download
    ```
    
-3. Visual Studio Code Extensions : ``` Prettier & Vetur ```
+   </td></tr></table><br>
+   
+3. Visual Studio Code Extensions : 
 
-<br>
+   <table><tr><td width="810">
+      
+   ``` Prettier & Vetur ```
+   
+   </td></tr></table>
+   
+<br><br>
 
 ## Memulai
-1. Unduh dan ekstrak repositori ini.<br>
-2. Buka direktori ``` perpusvue404 ```, lalu buka ``` CMD ``` di dalam direktori tersebut.<br>
+1. Unduh dan ekstrak repositori ini.<br><br>
 
-   • Pertama, Jika anda ``` belum menginstal vue/cli ```, jalankan perintah:<br>
+2. Buka direktori ``` perpusvue404 ```, lalu buka ``` CMD ``` di dalam direktori tersebut.<br><br>
 
+   • Pertama, Jika anda ``` belum menginstal vue/cli ```, jalankan perintah:
+
+   <table><tr><td width="810">
+      
    ````bash
    npm install -g @vue/cli
    ````
+   
+   </td></tr></table><br>
 
-   • Kedua, langkah ini wajib dilakukan, jadi silakan salin perintah berikut:<br>
+   • Kedua, langkah ini wajib dilakukan, jadi silakan salin perintah berikut:
+
+   <table><tr><td width="810">
 
    ````bash
    npm run serve
    ````
+   
+   </td></tr></table><br>
 
-3. Buka ``` peramban ``` anda (Tab baru), lalu ketik -> ``` http://localhost:8080/ ``` atau sesuaikan yang ada di ``` CMD ``` anda.<br>
+3. Buka ``` peramban ``` anda (Tab baru), lalu ketik -> ``` http://localhost:8080/ ``` atau sesuaikan yang ada di ``` CMD ``` anda.<br><br>
 
 4. Silakan akses fitur-fiturnya dan nikmatilah [Selesai].
 
-<br>
+<br><br>
 
 ## Sorotan
 <table>
@@ -76,22 +100,22 @@
 </tr>
 </table>
 
-<br>
+<br><br>
 
 ## Pengingat
 Kekurangan: Fitur pencarian masih belum berfungsi.
 
-<br>
+<br><br>
 
 ## Apresiasi
 Jika anda merasa karya ini bermanfaat, dukunglah karya ini sebagai bentuk apresiasi kepada penulis dengan cara mengeklik tombol ``` ⭐Bintang ```.
 
-<br>
+<br><br>
 
 ## Penafian
 Aplikasi ini dibuat dengan menyertakan sumber-sumber dari pihak ketiga. Pihak ketiga di sini adalah penyedia layanan, yang layanannya berupa pustaka, kerangka kerja, dan lain-lain. Saya ucapkan terima kasih banyak atas layanannya. Telah terbukti sangat membantu dan dapat diimplementasikan.
 
-<br>
+<br><br>
 
 ## LISENSI 
 LISENSI MIT - Hak Cipta © 2022 - Devan C. M. Wijaya, S.Kom
