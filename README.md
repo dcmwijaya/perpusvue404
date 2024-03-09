@@ -14,15 +14,24 @@
 
 ## Download & Install
 1. Visual Studio Code :
+
+   <table><tr><td width="810">
    
-   ```bash
+   ```
    https://code.visualstudio.com/docs/?dv=win
    ```
-2. NodeJS :
    
-   ```bash
+   </td></tr></table>
+   
+2. NodeJS :
+
+   <table><tr><td width="810">
+   
+   ```
    https://nodejs.org/en/download
    ```
+   
+   </td></tr></table>
    
 3. Visual Studio Code Extensions : ``` Prettier & Vetur ```
 
