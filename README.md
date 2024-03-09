@@ -21,7 +21,7 @@
    https://code.visualstudio.com/docs/?dv=win
    ```
    
-   </td></tr></table>
+   </td></tr></table><br>
    
 2. NodeJS :
 
@@ -31,34 +31,36 @@
    https://nodejs.org/en/download
    ```
    
-   </td></tr></table>
+   </td></tr></table><br>
    
 3. Visual Studio Code Extensions : ``` Prettier & Vetur ```
 
-<br>
+<br><br>
 
 ## Get Started
-1. Download and extract this repository.
+1. Download and extract this repository.<br><br>
    
-2. Open the ``` perpusvue404 ``` directory, then open ``` CMD ``` inside the directory.<br>
+2. Open the ``` perpusvue404 ``` directory, then open ``` CMD ``` inside the directory.<br><br>
 
    • First, If you have ``` not installed vue/cli ```, run the command:<br>
 
    ````bash
    npm install -g @vue/cli
    ````
-
+   <br>
+   
    • Secondly, this step is mandatory, so please copy the following command:<br>
 
    ````bash
    npm run serve
    ````
+   <br>
 
-3. Open your ``` browser ``` (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your ``` CMD ```.<br>
+3. Open your ``` browser ``` (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your ``` CMD ```.<br><br>
 
 4. Please access the features and enjoy [Done].
 
-<br>
+<br><br>
 
 ## Highlights
 <table>
@@ -86,22 +88,22 @@
 </tr>
 </table>
 
-<br>
+<br><br>
 
 ## Reminder
 Disadvantages: The search feature is still not functional.
 
-<br>
+<br><br>
 
 ## Appreciation
 If you find this work useful, please support it as a token of appreciation to the author by clicking the ``` ⭐Star ``` button.
 
-<br>
+<br><br>
 
 ## Disclaimer
 This application has been created by including third-party sources. Third parties here are service providers, whose services are in the form of libraries, frameworks, and others. I thank you very much for the service. It has proven to be very helpful and implementable.
 
-<br>
+<br><br>
 
 ## LICENSE
 MIT License - Copyright © 2022 - Devan C. M. Wijaya, S.Kom
