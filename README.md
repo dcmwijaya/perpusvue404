@@ -13,7 +13,7 @@
 <br>
 
 ## Download & Install
-1. Visual Studio Code :
+1. Visual Studio Code
 
    <table><tr><td width="810">
    
@@ -23,7 +23,7 @@
    
    </td></tr></table><br>
    
-2. NodeJS :
+2. NodeJS
 
    <table><tr><td width="810">
    
@@ -33,7 +33,13 @@
    
    </td></tr></table><br>
    
-3. Visual Studio Code Extensions : ``` Prettier & Vetur ```
+3. Visual Studio Code Extensions
+
+   <table><tr><td width="810">
+
+   ``` Prettier & Vetur ```
+   
+   </td></tr></table><br>
 
 <br><br>
 
@@ -42,19 +48,25 @@
    
 2. Open the ``` perpusvue404 ``` directory, then open ``` CMD ``` inside the directory.<br><br>
 
-   • First, If you have ``` not installed vue/cli ```, run the command:<br>
+   • First, If you have ``` not installed vue/cli ```, run the command:
+
+   <table><tr><td width="810">
 
    ````bash
    npm install -g @vue/cli
    ````
-   <br>
    
-   • Secondly, this step is mandatory, so please copy the following command:<br>
+   </td></tr></table><br>
+   
+   • Secondly, this step is mandatory, so please copy the following command:
+
+   <table><tr><td width="810">
 
    ````bash
    npm run serve
    ````
-   <br>
+   
+   </td></tr></table><br>
 
 3. Open your ``` browser ``` (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your ``` CMD ```.<br><br>
 
