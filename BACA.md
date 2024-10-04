@@ -1,11 +1,8 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?style=flat)](https://github.com/ellerbrock/open-source-badges/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?logo=github&color=%23F7DF1E)](https://opensource.org/licenses/MIT)
-![GitHub last commit](https://img.shields.io/github/last-commit/devancakra/perpusvue404)
-![VueJS](https://img.shields.io/badge/-Vue%20JS-darkcyan?style=flat&logo=vue.js)
-![HTML5](https://img.shields.io/badge/-HTML%205-purple.svg?&logo=html5)
-![CSS3](https://img.shields.io/badge/-CSS%203-green.svg?&logo=css3)
-![JS](https://img.shields.io/badge/-Javascript-brown.svg?&logo=javascript)
-![Bootstrap](https://img.shields.io/badge/-Bootstrap%205-white.svg?&logo=bootstrap)
+![GitHub last commit](https://img.shields.io/github/last-commit/devancakra/perpusvue404?logo=Codeforces&logoColor=white&color=%23F7DF1E)
+![Project](https://img.shields.io/badge/Project-Website-light.svg?style=flat&logo=googlechrome&logoColor=white&color=%23F7DF1E)
+![Type](https://img.shields.io/badge/Type-Course-light.svg?style=flat&logo=gitbook&logoColor=white&color=%23F7DF1E)
 
 # PerpusVue404
 <p>PerpusVue404 adalah hasil dari pelatihan reguler CAMP404 Batch 16 yang telah saya sesuaikan.</p>
@@ -82,9 +79,9 @@
 <th width="280">Pencarian</th>
 </tr>
 <tr>
-<td><img src="https://github.com/devancakra/perpusvue404/assets/54527592/c373531d-e6f6-4864-9d09-6232727dcc93" alt="home"></td>
-<td><img src="https://github.com/devancakra/perpusvue404/assets/54527592/e07a8e77-27d0-47b2-ab63-622fdb922835" alt="catalog"></td>
-<td><img src="https://github.com/devancakra/perpusvue404/assets/54527592/12a27eb6-69ed-435b-85aa-9796e72a7597" alt="search"></td>
+<td><img src="documentation/Home.jpg" alt="home"></td>
+<td><img src="documentation/Catalog.jpg" alt="catalog"></td>
+<td><img src="documentation/Search.jpg" alt="search"></td>
 </tr>
 </table>
 <table>
@@ -94,9 +91,9 @@
 <th width="280">Hapus Buku</th>
 </tr>
 <tr>
-<td><img src="https://github.com/devancakra/perpusvue404/assets/54527592/8fc42ada-67e7-454f-bc50-84d749428355" alt="add-book"></td>
-<td><img src="https://github.com/devancakra/perpusvue404/assets/54527592/d018dda6-2fe6-42b2-b5e8-82f6472e00c2" alt="edit-book"></td>
-<td><img src="https://github.com/devancakra/perpusvue404/assets/54527592/ff7cdd35-c0d2-4a3f-a867-5d0a60efe674" alt="delete-book"></td>
+<td><img src="documentation/Add Book.jpg" alt="add-book"></td>
+<td><img src="documentation/Edit Book.jpg" alt="edit-book"></td>
+<td><img src="documentation/Delete Book.jpg" alt="delete-book"></td>
 </tr>
 </table>
 
@@ -113,7 +110,7 @@ Jika karya ini bermanfaat bagi anda, maka dukunglah karya ini sebagai bentuk apr
 <br><br>
 
 ## Penafian
-Aplikasi ini dibuat dengan menyertakan sumber-sumber dari pihak ketiga. Pihak ketiga di sini adalah penyedia layanan, yang layanannya berupa pustaka, kerangka kerja, dan lain-lain. Saya ucapkan terima kasih banyak atas layanannya. Telah terbukti sangat membantu dan dapat diimplementasikan.
+Aplikasi ini merupakan hasil karya saya sendiri dan bukan merupakan hasil plagiat dari penelitian atau karya orang lain, kecuali yang berkaitan dengan layanan pihak ketiga yang meliputi: pustaka, kerangka kerja, dan lain sebagainya.
 
 <br><br>
 
